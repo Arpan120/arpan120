@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="author" content="Arpan Das">
+	<meta name=discription content="Hello, I am Arpan Das.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1">
+	<meta name="HandheldFriendly" description="true">p
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kodchasan:300,400" rel="stylesheet">
+	<link rel="icon" href="images/programmer_img.png" type="image/png">
+	<meta charset="UTF-8"/>
+  </head>
+  <body>
+
+	<div class="image">
+     <img id="home" class="programmer_img" src="images/programmer_img.png" alt="programmer_img"/>
+
+	</div>   
+	<p>Hi, I am Arpan.</p>
+	
+	<div id="navbar">
+	  <a class="active" href="#home" href="javascript:void(0)">Home</a>
+	  <a href="#about_div" href="javascript:void(0)">About</a>
+	  <a href="#images_div" href="javascript:void(0)">Images</a>
+	  <a href="#follow_header"href="javascript:void(0)">Follow</a>
+	</div>
+	
+	<div id="about_div">
+	  <h1>About Me</h1>
+	  <p class="about_me">Hello I am Arpan Das. I am from West Bengal, India. I am a Student. I am learing Website Development, Software Development and Android App Development by myself through internet, docomantations and books. Also along with these I am learing Machine Learning, Artifical Inteligence, Biomatrix, Nueral Networking. I want to be a great programmer. Also, I have interest in subjects like Theoretical Physics, Mathematics, Astronomy, Parascience, Spirituality etc. Programming is my passion.</p>
+	</div>
+	
+	<div id="images_div">
+	  <h1>Image Gallery</h1>
+	  <img class="gallery" src="images/img1.jpg" alt="img1"/>
+	  <img class="gallery" src="images/img2.jpg" alt="img2"/>
+      <img class="gallery" src="images/img3.jpg" alt="img3"/>
+	  <img class="gallery" src="images/img4.jpg" alt="img4"/>
+	  <img class="gallery" src="images/img5.jpg" alt="img5"/>
+	  <img class="gallery" src="images/img6.jpg" alt="img6"/>
+	  <img class="gallery" src="images/img7.jpg" alt="img7"/>
+	  <img class="gallery" src="images/img8.jpg" alt="img8"/>
+	  <img class="gallery" src="images/img9.jpg" alt="img9"/>
+	  <img class="gallery" src="images/img10.jpg" alt="img10"/>
+	</div>
+	
+	<p id="follow_header">Follow Me</p>
+	<div id="follow_div">
+	  <a href="https://m.facebook.com/profile.php" target="_blank"><img class="follow_icon" src="images/facebook.png" alt="facebook"/></a>
+	  <a href="https://github.com/Arpan120" target="_blank"><img class="follow_icon" src="images/github.png" alt="github"/></a>
+	  <a href="https://www.reddit.com/user/Arpan120" target="_blank"><img class="follow_icon" src="images/reddit.png" alt="reddit"/></a>
+	</div>
+	
+	<div class="footer">
+	  <p id="footer">Thanks for visiting my website.</p>
+	</div>
+	
+	<script>
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+	</script>
+  </body>
+</html>		
